@@ -1,0 +1,13 @@
+<div ng-controller="moviePlayerCtrl as controller">
+    <div class="videogular-container">
+        <videogular vg-player-ready="controller.onPlayerReady($API)" vg-theme="controller.config.theme.url" vg-auto-play="true" vg-plays-inline="'true'" vg-native-fullscreen="'false'"  vg-complete="controller.backHome('/')">
+            <vg-media vg-src="controller.config.sources"
+                      vg-tracks="controller.config.tracks" vg-preload="controller.config.preload" vg-native-controls="true">
+            </vg-media>
+        </videogular>
+    </div>
+</div>
+</div>
+
+
+
