@@ -16,7 +16,7 @@ app.get('/getMovies', function(req, res) {
         listMovies = listMovies.entries;
 
           for (var i = 0; i < listMovies.length; i++) {
-    			listMovies[i].images[0].url = "/images/movies/"+(i+1)+".jpg";
+    			listMovies[i].images[0].url = "/public/images/movies/"+(i+1)+".jpg";
 			}
 
 			res.send(listMovies);
