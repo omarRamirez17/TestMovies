@@ -7,12 +7,9 @@ a{
   color: #ffffff;
 }
 
-a:active { 
-    background-color: #4C4CFF;
-}
 
-a:focus {
-     color: #ffffff;
+a:active { 
+    background-color: yellow;
 }
 
 span.title-home {
@@ -36,23 +33,88 @@ span.title-history {
     margin-top: -27px;
     margin-right: 5%;
     color: #ffffff;
+    color: #ffffff;
 }
 
-p.title-movie {
+span.title-movie {
     font-style: normal;
     font-family: "Times New Roman";
-    font-size: 15px;
-    text-align:center;
-    color: #ffffff;    
+    font-size: 23px;
+    text-align:left;
+    color: #ffffff;
 }
 
-a.history {
-    font-style: normal;
-    font-family:"Times New Roman";
-    font-size: 18px;
-    color: #ffffff;    
+.carousel-image{
+  width: 100%;
 }
 
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #4a4949;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #4a4949;
+}
+
+/* Customize container */
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+    background-color: #4a4949;
+  }
+}
 
 
 .videogular-container {
@@ -61,8 +123,6 @@ a.history {
     margin: auto;
     overflow: hidden;
 }
-
-
 
 @media (min-width: 1200px) {
 
@@ -182,7 +242,7 @@ a.history {
     }
 
     .nbs-flexisel-item img {
-     max-width: 70%;
+     max-width: 100%;
      cursor: pointer;
      position: relative;
      margin-top: 10px;
@@ -190,6 +250,11 @@ a.history {
     }
 
 }
+
+    clearout {
+    height:20px;
+    clear:both;
+    }
 
   .carousel-inner > .item > img { 
     width:20%;
@@ -244,7 +309,7 @@ a.history {
 
 .nbs-flexisel-nav-left,
 .nbs-flexisel-nav-right {
-    padding:89px 10px;
+    padding:5px 10px;
     border-radius:15px;
     -moz-border-radius:15px;
     -webkit-border-radius:15px;      
@@ -253,9 +318,8 @@ a.history {
     z-index: 4;
     top: 50%;
     transform: translateY(-50%);   
-    background: rgb(68, 5, 13);
-    color: #fff;   
-    opacity: 0.5;  
+    background: rgba(0,0,0,0.5);
+    color: #fff;     
 }
 
 .nbs-flexisel-nav-left:before {
