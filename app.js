@@ -4,6 +4,8 @@ var request = require('request');
 var app = express();
 var port = process.env.PORT || 8080;
 
+app.use('/img',express.static(path.join(__dirname, 'public/images')));
+
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
@@ -16,7 +18,7 @@ app.get('/getMovies', function(req, res) {
         listMovies = listMovies.entries;
 
           for (var i = 0; i < listMovies.length; i++) {
-    			listMovies[i].images[0].url = "/public/images/movies/"+(i+1)+".jpg";
+    			listMovies[i].images[0].url = "/img/movies/"+(i+1)+".jpg";
 			}
 
 			res.send(listMovies);
