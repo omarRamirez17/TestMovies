@@ -1,0 +1,65 @@
+
+<html>
+<head>
+  <title>Accedo Test Omar Ramirez</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body ng-app="prototipoApp">
+
+<div class="jumbotron text-center">
+        
+ <span class="title-home">
+        <a href="#">
+          <span class="glyphicon glyphicon-film"></span> Home 
+        </a></span> 
+
+ <span class="title-history">
+     <a href="#history">
+        <span class="glyphicon glyphicon-film"></span> History 
+     </a>
+ </span>
+
+</div>
+  
+<div class="container">
+    
+<div ng-view=""></div>
+
+</div>
+
+    <!-- Videogular JS -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/filmRoll/jquery.flexisel.js"></script>
+    
+     <!-- Videogular JS -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-sanitize.min.js"></script>
+    <script src="https://unpkg.com/videogular@2.1.2/dist/videogular/videogular.js"></script>
+    <script src="https://unpkg.com/videogular@2.1.2/dist/controls/vg-controls.js"></script>
+    <script src="https://unpkg.com/videogular@2.1.2/dist/overlay-play/vg-overlay-play.js"></script>
+    <script src="https://unpkg.com/videogular@2.1.2/dist/poster/vg-poster.js"></script>
+    <script src="https://unpkg.com/videogular@2.1.2/dist/buffering/vg-buffering.js"></script>
+    
+     <!-- APP JS -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/moviePlayer.js"></script>
+    <script src="scripts/controllers/history.js"></script>
+
+</body>
+
+</html>
