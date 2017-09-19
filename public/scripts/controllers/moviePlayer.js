@@ -7,15 +7,14 @@
  * Controller of the prototipoApp
  */
 angular.module('prototipoApp')
-.controller('moviePlayerCtrl',["$sce",'serviceMovie',"$window","vgFullscreen",function ($sce, serviceMovie, $window, vgFullscreen) {
-  
+.controller('moviePlayerCtrl',["$sce",'serviceMovie',"$window",function ($sce, serviceMovie, $window) {
+
 	        var controller = this;
 			controller.API = null;
  
 			controller.onPlayerReady = function(API) {
 				controller.API = API;
-				vgFullscreen.request();
-  							
+  				controller.API.toggleFullScreen();			
 			};
 	
             var movie = serviceMovie.getSlide(); 
